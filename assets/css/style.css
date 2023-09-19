@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #0c1970;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  color: #ffff;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #2d3e50;
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  flex: 25%;
+  max-width: 100%;
+  background-color: #1bbc9b;
+}
+
+.info-p {
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.work {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  flex: 75%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #8c1bbc;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+.column :first-of-type {
+  flex: 75%;
+  max-width: 100%;
+}
+
+.work img {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  padding: 20px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.column a {
+  text-align: center;
+  padding: 20px;
+}
+
+aside {
+  flex: 1;
+  background-color: #33519c;
+  padding: 20px;
+}
+
+section {
+  flex: 3;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  flex: 25%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #1b89bc;
+}
+.contact-list {
+  display: flex;
+  flex-flow: column;
+  flex: 25%;
+  max-width: 100%;
+}
+
+.contact-p {
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+
+
+nav {
+  background-color: #1b89bc;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  nav {
+    flex-direction: column;
+  }
+
+  /* Make the sidebar stack below the body */
+  aside {
+    order: 2;
+  }
+
+  /* Change the header background */
+  header {
+    background: #d98b1d;
+  }
+
+  /* Change the navbar and contact background */
+  nav,
+  .contact {
+    background-color: #b885bb;
+  }
+}
