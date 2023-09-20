@@ -52,6 +52,7 @@ main {
   flex-flow: column;
   flex: 25%;
   max-width: 100%;
+  padding: 20px;
   background-color: #1bbc9b;
 }
 
