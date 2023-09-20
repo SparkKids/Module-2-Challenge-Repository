@@ -14,9 +14,25 @@ header {
   color: #fff;
 }
 
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 3;
+  padding: 20px;
+  background-color: #2d3e50;
+}
+aside {
+  flex: 1;
+  background-color: #33519c;
+  padding: 20px;
+}
+
+
+/*The nav bar sits below the intro section and is the primary method of navigating the page.*/
 nav {
   display: flex;
   color: #ffff;
+  background-color: #1b89bc;
 }
 
 nav a {
@@ -25,18 +41,12 @@ nav a {
   text-decoration: none;
   text-align: center;
 }
-
+/* Wrapper for items navigated to by the nav bar */
 main {
   display: flex;
   flex-wrap: wrap;
 }
-
-.intro {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #2d3e50;
-}
-
+/*About me section*/
 .info {
   display: flex;
   flex-flow: column;
@@ -51,7 +61,7 @@ main {
   max-width: 100%;
   justify-content: space-around;
 }
-
+/*My work section */
 .work {
   display: flex;
   flex-flow: row;
@@ -62,7 +72,7 @@ main {
   background-color: #8c1bbc;
 
 }
-
+/*Row and column used for flex layout for sample projects.*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +88,12 @@ main {
   max-width: 100%;
   padding: 0 4px;
 }
+.column a {
+  text-align: center;
+  padding: 20px;
+}
+
+/*Want the first project to be bigger */
 .column :first-of-type {
   flex: 75%;
   max-width: 100%;
@@ -95,22 +111,7 @@ main {
   vertical-align: bottom;
 }
 
-.column a {
-  text-align: center;
-  padding: 20px;
-}
-
-aside {
-  flex: 1;
-  background-color: #33519c;
-  padding: 20px;
-}
-
-section {
-  flex: 3;
-  padding: 20px;
-}
-
+/*Contact Me section */
 .contact {
   display: flex;
   flex-flow: column;
@@ -136,9 +137,6 @@ section {
 
 
 
-nav {
-  background-color: #1b89bc;
-}
 
 
 @media screen and (max-width: 768px) {
